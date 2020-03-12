@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Waxom</title>
+
+	<!-------- FAVICON -------->
+	<link rel="icon" href="img/bg-mob.png" type="images/png">
+
+	<!-------- BOOTSTRAP -------->
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+
+	<!-------- GOOGLE FONTS -------->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+
+	<!-------- ICOMOON FONTS -------->
+	<link rel="stylesheet" href="icomoon/demo-files/demo.css">
+	<link rel="stylesheet" href="icomoon/style.css">
+
+	<!-------- STYLE CSS -------->
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-3">
+					<div class="header-logo">
+						<img src="img/header/header-logo.png" alt="Waxom">
+					</div>
+				</div>
+				<div class="col-9">
+					<nav class="header-nav">
+						<a href="#">Главная</a>
+						<a href="#">О компании</a>
+						<a href="#">Портфолио</a>
+						<a href="#">Характеристики</a>
+						<a href="#">Блог</a>
+						<a href="#">Цены</a>
+						<a href="#">Контакты</a>
+					</nav>
+				</div>
+			</div>
+			<div class="slider">
+				<p class="slider__title">Уникальный и Современный Дизайн</p>
+				<h1>Портфолио PSD Макетов</h1>
+				<p title="slider__info">Самый современный дизайн сайтов от передовых специалистов</p>
+				<button class="slider__button button">НАЧАТЬ</button>
+			</div>
+		</div>
+	</header>
+
+	<section class="services">
+		<div class="container">
+			<div class="features">
+
+				<div class="features-block">
+					<div class="features-block__icon">
+						<span class="icon-webAppDesign"></span>
+					</div>
+					<div class="features-block__text">
+						<div class="features-block__title">
+							Web-приложение
+						</div>
+						<div class="features-block__descr">
+							Создадим web-приложение любой сложности на ваше усмотрение
+						</div>
+					</div>
+				</div>
+
+				<div class="features-block">
+					<div class="features-block__icon">
+						<span class="icon-development"></span>
+					</div>
+					<div class="features-block__text">
+						<div class="features-block__title">
+							Развитие
+						</div>
+						<div class="features-block__descr">
+							Усовершенствуем ваше web- приложение до высочайшего уровня
+						</div>
+					</div>
+				</div>
+
+				<div class="features-block">
+					<div class="features-block__icon">
+						<span class="icon-settings"></span>
+					</div>
+					<div class="features-block__text">
+						<div class="features-block__title">
+							Настройка
+						</div>
+						<div class="features-block__descr">
+							Исправим ошибки и подкоректируем устаревшие web-приложения
+						</div>
+					</div>
+				</div>
+
+				<div class="features-block">
+					<div class="features-block__icon">
+						<span class="icon-marketing"></span>
+					</div>
+					<div class="features-block__text">
+						<div class="features-block__title">
+							Маркетинг
+						</div>
+						<div class="features-block__descr">
+							Продвинем ваше web- приложение в социальной сфере
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="block3">
+		<div class="container">
+			<div class="tagline">
+				<div class="tagline-descr">
+					<h3 class="tagline-descr__title">
+						Waxom - это реализация ваших идей!
+					</h3>
+					<p class="tagline-descr__subtitle">
+						Возьмемся за самые смелые задумки и за самые эксперементальные ваши идеи. Гарантируем качество, энтузиазм и креатив в работе!
+					</p>
+				</div>
+				<div class="tagline-waxomscreen">
+					<img src="img/bg.png" alt="Варианты макетов">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="wordpress">
+		<div class="container">
+			<div class="wordpr">
+				<div class="wordpr-descr">
+					<h3 class="wordpr-descr__title">
+						<span>Waxom</span> Многоцелевая WordPress Тема
+					</h3>
+					<p class="wordpr-descr__subtitle">
+						Не забудьте поставить нам оценку. Спасибо!
+					</p>
+				</div>
+				<div class="wordpr-btn">
+					<button class="wordpr-btn__button button">
+						КУПИТЬ
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ourprojects">
+		<div class="container">
+			<div class="projects">
+				<div class="projects-descr">
+					<h3 class="projects-descr__title">
+						Наши Последние Проекты
+					</h3>
+					<p class="projects-descr__subtitle">
+						Вы можете ознакомиться с нашими последними дизайнами сайтов, web-приложений, мобильных приложений, а также с индивидуальными иллюстрацами!
+					</p>
+				</div>
+				<div class="projects-toggle" id="myBtnContainer">
+					<button class="projects-toggle__button btn active" onclick="filterSelection('all')">All</button>
+					<button class="projects-toggle__button btn" onclick="filterSelection('webdesign')">Wed Design</button>
+					<button class="projects-toggle__button btn" onclick="filterSelection('mobileapp')">Mobile App</button>
+					<button class="projects-toggle__button btn" onclick="filterSelection('illustration')">Illustration</button>
+					<button class="projects-toggle__button btn" onclick="filterSelection('photography')">Photography</button>
+				</div>
+				<div class="projects-posts">
+
+					<div class="projects-posts__block filterDiv mobileapp">
+						<div class="projects-posts__img">
+							<img src="img/project/bg-item-1.png" alt="Мобильное приложение">
+						</div>
+						<div class="projects-posts__descr">
+							<h5>Мобильная Версия Сайта</h5>
+							<p>Адаптивный вариант</p>
+						</div>
+					</div>
+
+					<div class="projects-posts__block filterDiv photography">
+						<div class="projects-posts__img">
+							<img src="img/project/bg-item-2.png" alt="Фотография">
+						</div>
+						<div class="projects-posts__descr">
+							<h5>Бушующая Натура Моря</h5>
+							<p>Фотография, Природа</p>
+						</div>
+					</div>
+
+					<div class="projects-posts__block filterDiv webdesign">
+						<div class="projects-posts__img">
+							<img src="img/project/bg-item-3.png" alt="Дизайн сайта">
+						</div>
+						<div class="projects-posts__descr">
+							<h5>Дизайн Онлайн Журнала</h5>
+							<p>Дизайн, Макет</p>
+						</div>
+					</div>
+
+					<div class="projects-posts__block filterDiv photography">
+						<div class="projects-posts__img">
+							<img src="img/project/bg-item-4.png" alt="Фотография">
+						</div>
+						<div class="projects-posts__descr">
+							<h5>Южная Бразилия</h5>
+							<p>Фотография, Природа</p>
+						</div>
+					</div>
+
+					<div class="projects-posts__block filterDiv illustration">
+						<div class="projects-posts__img">
+							<img src="img/project/bg-item-5.png" alt="Иллюстрация">
+						</div>
+						<div class="projects-posts__descr">
+							<h5>Иллюстрация Журнала</h5>
+							<p>Иллюстрация, Макет</p>
+						</div>
+					</div>
+
+					<div class="projects-posts__block filterDiv photography">
+						<div class="projects-posts__img">
+							<img src="img/project/bg-item-6.png" alt="Фотография">
+						</div>
+						<div class="projects-posts__descr">
+							<h5>Карибское Море</h5>
+							<p>Фотография, Природа</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="projects-btn">
+					<button class="projects-btn__button button">ПОСМОТРЕТЬ БОЛЬШЕ</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="mobiledev">
+		<div class="container">
+			<div class="mobile">
+				<div class="mobile-img">
+					<img src="img/bg-mob.png" alt="Мобильный вариант верстки">
+				</div>
+				<div class="mobile-descr">
+					<div class="mobile-descr__title">
+						Отлично подходит для Мобильных устройств!
+					</div>
+					<div class="mobile-descr__subtitle">
+						Каждый дизайн сайта мы делаем так, чтобы легко и красиво можно было сделать адаптивный вариант. Адаптивный вариант сайта отвечает всем требованиям удобства, красоты и простоты понимания. Сегодня адаптивный вариант сайта, особенно под мобильные устройства, важная часть web-дизайна!
+					</div>
+					<div class="mobile-descr__ul">
+						<ul class="mobile-descr__formats">
+							<li><img src="img/li.png" alt=""><p>Широкоформатный 1920px</p></li>
+							<li><img src="img/li.png" alt=""><p>Обычный 1200px</p></li>
+							<li><img src="img/li.png" alt=""><p>Маленький 576px</p></li>
+							<li><img src="img/li.png" alt=""><p>Сверхмаленький 320px</p></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="statistics">
+		<div class="container">
+			<div class="numbers">
+				<div class="numbers-block">
+					<div class="numbers-block__icon">
+						<img src="img/statistics/statistics-icon-1.png" alt="Клиенты">
+					</div>
+					<div class="numbers-block__number">
+						3587
+					</div>
+					<div class="numbers-block__descr">
+						Satisfied Clients
+					</div>
+				</div>
+				<div class="numbers-block">
+					<div class="numbers-block__icon">
+						<img src="img/statistics/statistics-icon-2.png" alt="Кофе">
+					</div>
+					<div class="numbers-block__number">
+						207
+					</div>
+					<div class="numbers-block__descr">
+						Cups of coffee
+					</div>
+				</div>
+				<div class="numbers-block">
+					<div class="numbers-block__icon">
+						<img src="img/statistics/statistics-icon-3.png" alt="Посты блога">
+					</div>
+					<div class="numbers-block__number">
+						2500
+					</div>
+					<div class="numbers-block__descr">
+						Blog posts
+					</div>
+				</div>
+				<div class="numbers-block">
+					<div class="numbers-block__icon">
+						<img src="img/statistics/statistics-icon-4.png" alt="Лайки">
+					</div>
+					<div class="numbers-block__number">
+						873
+					</div>
+					<div class="numbers-block__descr">
+						Likes
+					</div>
+				</div>
+				<div class="numbers-block">
+					<div class="numbers-block__icon">
+						<img src="img/statistics/statistics-icon-5.png" alt="Обеды">
+					</div>
+					<div class="numbers-block__number">
+						900
+					</div>
+					<div class="numbers-block__descr">
+						We launched
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="recentposts">
+		<div class="container">
+			<div class="posts">
+				<div class="posts-descr">
+					<div class="posts-descr__title">
+						Недавние Посты
+					</div>
+					<div class="posts-descr__subtitle">
+						Вы можете убедиться в качестве наших работ! Здесь примеры наших недавних и лучших работ.
+					</div>
+				</div>
+				<div class="posts-blocks">
+					<div class="posts-blocknews">
+						<div class="posts-blocknews__img">
+							<img src="img/posts/post-1.png" alt="Фотограф Николай">
+						</div>
+						<div class="posts-blocknews__descr">
+							<h4>Пеший фотограф Николай</h4>
+							<p>Эссе путешественника-фотографа о том как он видит разные города.</p>
+							<p class="readmore">Читать Дальше <img src="img/readmore-icon.png" alt=""></p>
+						</div>
+					</div>
+					<div class="posts-blocknews">
+						<div class="posts-blocknews__img">
+							<img src="img/posts/post-2.png" alt="Интервью">
+						</div>
+						<div class="posts-blocknews__descr">
+							<h4>Интервью с коперайтером</h4>
+							<p>Мать одиночка делится секретами заработка в интернете.</p>
+							<p class="readmore">Читать Дальше <img src="img/readmore-icon.png" alt=""></p>
+						</div>
+					</div>
+					<div class="posts-blocknews">
+						<div class="posts-blocknews__img">
+							<img src="img/posts/post-3.png" alt="Круизы">
+						</div>
+						<div class="posts-blocknews__descr">
+							<h4>Круизы на лайнере</h4>
+							<p>Как выбрать правильный круиз и какие проблемы вас ждут.</p>
+							<p class="readmore">Читать Дальше <img src="img/readmore-icon.png" alt=""></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="partners">
+		<div class="container">
+			<div class="partners-block">
+				<img src="img/partners/partners-1.png" alt="Партнер">
+				<img src="img/partners/partners-2.png" alt="Партнер">
+				<img src="img/partners/partners-3.png" alt="Партнер">
+				<img src="img/partners/partners-4.png" alt="Партнер">
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="thanks">
+				<p><span>Верстал:</span> <a href="https://vk.com/martineeden">Рысмагамбет Данияр.</a></p>
+				<p>Огромная благодарность <span>Waxom</span> за предоставленный макет!</p>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+</html>
