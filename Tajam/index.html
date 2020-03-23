@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -21,67 +21,57 @@
 
 	<link rel="stylesheet" href="css/style.css">
 
-	<!-- Yandex.Metrika counter -->
-	<script type="text/javascript" >
-	   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-	   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-	   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-	   ym(60945811, "init", {
-	        clickmap:true,
-	        trackLinks:true,
-	        accurateTrackBounce:true,
-	        webvisor:true
-	   });
-	</script>
-	<noscript><div><img src="https://mc.yandex.ru/watch/60945811" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-	<!-- /Yandex.Metrika counter -->
-
 </head>
 
 <body>
 
-	<header>
-		<div class="container header">
+	<header class="header">
+		<div class="container">
 
-			<div class="row header-row">
+			<div class="row justify-content-between header__body">
 
-				<div class="col-2 header-logo">
-					<img src="img/header/header-logo.png" alt="Логотип компании">
-					<p>tajam</p>
+				<div class="col-2 header__logo">
+					<div class="header__logo-block">
+						<img src="img/header/header-logo.png" alt="Логотип компании">
+						<p>tajam</p>
+					</div>
 				</div>
+				
+				<div class="col-7 header__nav">
 
-				<div class="col-7 header-nav">
+					<div class="row">
+						<div class="col-1 offset-11">
+							<div class="header__burger">
+								<span class="burger__line burger__line-first"></span>
+								<span class="burger__line burger__line-second"></span>
+								<span class="burger__line burger__line-third"></span>
+								<span class="burger__line burger__line-fourth"></span>
+							</div>
+						</div>
+					</div>
+
 					<nav class="menu">
 						<ul class="menu__list">
 							<li>
 								<a href="#" class="menu__link">ГЛАВНАЯ</a>
 							</li>
 							<li>
-								<a href="#" class="menu__link">О НАС</a>
+								<a href="#about" class="menu__link">О НАС</a>
 							</li>
 							<li>
-								<a href="#" class="menu__link">УСЛУГИ</a>
+								<a href="#expertise" class="menu__link">УСЛУГИ</a>
 							</li>
 							<li>
-								<a href="#" class="menu__link">КОМАНДА</a>
+								<a href="#team" class="menu__link">КОМАНДА</a>
 							</li>
 							<li>
-								<a href="#" class="menu__link">ПРОЕКТЫ</a>
+								<a href="#works" class="menu__link">ПРОЕКТЫ</a>
 							</li>
 							<li>
-								<a href="#" class="menu__link">ОТЗЫВЫ</a>
+								<a href="#map" class="menu__link">ОФИС</a>
 							</li>
 							<li>
-								<a href="#" class="menu__link">КОНТАКТЫ<span class="menu__arrow arrow"></span></a>
-								<ul class="sub-menu__list">
-									<li>
-										<a href="#" class="sub-menu__link">ТЕЛЕФОН</a>
-									</li>
-									<li>
-										<a href="#" class="sub-menu__link">ПОЧТА</a>
-									</li>
-								</ul>
+								<a href="#contact" class="menu__link">КОНТАКТЫ</a>
 							</li>
 						</ul>
 					</nav>
@@ -97,6 +87,16 @@
 					</h1>
 					<p class="header-descr__subtitle">
 						Это тестовый сайт показывающий умения верстальщика на чужом макете. Да, я пока не гуру верстки, но усердно учусь каждый день. Ох, уж этот текст рыба, который нелепо выглядит и приходится заменять его на что-то. В самом конце будет ссылка на верстальщика, пожалуйста напишите мне про мои ошибки. Спасибо за внимание и понимание!
+					</p>
+					<button class="button header-descr__button">УЗНАТЬ БОЛЬШЕ</button>
+				</div>
+
+				<div class="col-12 slides fade">
+					<h1 class="header-descr__title">
+						Мы Потрясающее Креативное Агентство!
+					</h1>
+					<p class="header-descr__subtitle">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur sint fuga corrupti atque ut veritatis ipsa odio, officiis dignissimos suscipit nostrum, maxime pariatur natus doloribus expedita? Ut tempora laudantium, ullam! Labore quis temporibus, et! Consequuntur blanditiis eligendi nulla id quo nihil ipsam, omnis reprehenderit vero iusto fuga. Fugiat voluptatem, quisquam quas velit ea, non ipsa.
 					</p>
 					<button class="button header-descr__button">УЗНАТЬ БОЛЬШЕ</button>
 				</div>
@@ -129,15 +129,15 @@
 		</div>
 	</header>
 
-	<section class="about">
+	<section id="about" class="about">
 		<div class="container">
 			<div class="row">
 
-				<div class="col-3 offset-1 about__logo">
+				<div class="col-sm-3 offset-sm-1 col-12 about__logo">
 					<img src="img/about/big-logo.png" alt="Большой логотип компании">
 				</div>
 
-				<div class="col-7 offset-1 about__descr">
+				<div class="col-sm-7 offset-sm-1 col-12 about__descr">
 					<h4>НАША ИСТОРИЯ</h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi ipsum, accusamus rem, voluptates saepe eligendi eius in, minima cum alias doloribus, laudantium non! Incidunt perferendis, porro sed odio voluptates ad.</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi ipsum, accusamus rem, voluptates saepe eligendi eius in, minima cum alias doloribus, laudantium non! Incidunt perferendis, porro sed odio voluptates ad.</p>
@@ -149,7 +149,7 @@
 
 	</section>
 
-	<section class="expertise">
+	<section id="expertise" class="expertise">
 		<div class="container">
 
 			<div class="row">
@@ -160,45 +160,49 @@
 			</div>
 
 			<div class="row align-items-end expertise__blocks">
-				<div class="col-4 expertise__item">
+
+				<div class="col-lg-4 col-sm-6 col-12 expertise__item">
 					<img src="img/expertise/expertise-icon-1.png" alt="Веб дизайн">
 					<h5>ВЕБ ДИЗАЙН & ВЕРСТКА</h5>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor cum dolores, doloribus! Lorem ipsum dolor sit amet.</p>
 				</div>
-				<div class="col-4 expertise__item">
+
+				<div class="col-lg-4 col-sm-6 col-12 expertise__item">
 					<img src="img/expertise/expertise-icon-2.png" alt="Отрисовка макета">
 					<h5>ОТРИСОВКА МАКЕТА</h5>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor cum dolores, doloribus! Lorem ipsum dolor sit amet.</p>
 				</div>
-				<div class="col-4 expertise__item">
+
+				<div class="col-lg-4 col-sm-6 col-12 expertise__item">
 					<img src="img/expertise/expertise-icon-3.png" alt="Мобильные приложения">
 					<h5>МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h5>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor cum dolores, doloribus! Lorem ipsum dolor sit amet.</p>
 				</div>
-			</div>
 
-			<div class="row align-items-end expertise__blocks">
-				<div class="col-4 expertise__item">
+				<div class="col-lg-4 col-sm-6 col-12 expertise__item">
 					<img src="img/expertise/expertise-icon-4.png" alt="Оптимизация">
 					<h5>SEO ОПТИМИЗАЦИЯ</h5>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor cum dolores, doloribus! Lorem ipsum dolor sit amet.</p>
 				</div>
-				<div class="col-4 expertise__item">
+
+				<div class="col-lg-4 col-sm-6 col-12 expertise__item">
 					<img src="img/expertise/expertise-icon-5.png" alt="Создание игр">
 					<h5>СОЗДАНИЕ ИГР</h5>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor cum dolores, doloribus! Lorem ipsum dolor sit amet.</p>
 				</div>
-				<div class="col-4 expertise__item">
+
+				<div class="col-lg-4 col-sm-6 col-12 expertise__item">
 					<img src="img/expertise/expertise-icon-6.png" alt="Ответственность">
 					<h5>СДЕЛАНО С ЛЮБОВЬЮ</h5>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor cum dolores, doloribus! Lorem ipsum dolor sit amet.</p>
 				</div>
+
 			</div>
 
 		</div>
 	</section>
 
-	<section class="team">
+	<section id="team" class="team">
 		<div class="container">
 
 			<div class="row">
@@ -210,7 +214,7 @@
 
 			<div class="row">
 
-				<div class="col-3 team__people">
+				<div class="col-lg-3 offset-lg-0 col-sm-5 offset-sm-1 col-8 offset-2 team__people">
 					<div class="team__img">
 						<img src="img/team/team-people-1.jpg" alt="Генеральный директор">
 					</div>
@@ -220,7 +224,7 @@
 					</div>
 				</div>
 
-				<div class="col-3 team__people">
+				<div class="col-lg-3 col-sm-5 col-8 offset-2 team__people">
 					<div class="team__img">
 						<img src="img/team/team-people-2.jpg" alt="Верстка">
 					</div>
@@ -230,7 +234,7 @@
 					</div>
 				</div>
 
-				<div class="col-3 team__people">
+				<div class="col-lg-3 offset-lg-0 col-sm-5 offset-sm-1 col-8 offset-2 team__people">
 					<div class="team__img">
 						<img src="img/team/team-people-3.jpg" alt="Дизайнер">
 					</div>
@@ -240,7 +244,7 @@
 					</div>
 				</div>
 
-				<div class="col-3 team__people">
+				<div class="col-lg-3 col-sm-5 col-8 offset-2 team__people">
 					<div class="team__img">
 						<img src="img/team/team-people-4.jpg" alt="Маркетолог">
 					</div>
@@ -262,14 +266,14 @@
 		</div>
 	</section>
 
-	<section class="works">
+	<section id="works" class="works">
 
 		<div class="container">
-			<div class="row">
-				<div class="col-3 works__title">
+			<div class="row align-items-center">
+				<div class="col-lg-3 col-4 works__title">
 					<h4>НАШИ РАБОТЫ</h4>
 				</div>
-				<div class="col-3 offset-6 works__link">
+				<div class="col-lg-3 offset-lg-6 col-5 offset-3 works__link">
 					<a>Смотрите Все Проекты На Dribbble &#10095;</a>
 				</div>
 			</div>
@@ -277,7 +281,7 @@
 
 		<div class="row works__block">
 
-			<div class="col-2 works__item">
+			<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 works__item">
 				<img src="img/works/work-1.jpg" alt="Описание работы">
 				<div class="works__content">
 					<h5>НАЗВАНИЕ РАБОТЫ</h5>
@@ -285,7 +289,7 @@
 				</div>
 			</div>
 
-			<div class="col-2 works__item">
+			<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 works__item">
 				<img src="img/works/work-2.jpg" alt="Описание работы">
 				<div class="works__content">
 					<h5>НАЗВАНИЕ РАБОТЫ</h5>
@@ -293,7 +297,7 @@
 				</div>
 			</div>
 
-			<div class="col-2 works__item">
+			<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 works__item">
 				<img src="img/works/work-3.jpg" alt="Описание работы">
 				<div class="works__content">
 					<h5>НАЗВАНИЕ РАБОТЫ</h5>
@@ -301,7 +305,7 @@
 				</div>
 			</div>
 
-			<div class="col-2 works__item">
+			<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 works__item">
 				<img src="img/works/work-4.jpg" alt="Описание работы">
 				<div class="works__content">
 					<h5>НАЗВАНИЕ РАБОТЫ</h5>
@@ -309,7 +313,7 @@
 				</div>
 			</div>
 
-			<div class="col-2 works__item">
+			<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 works__item">
 				<img src="img/works/work-5.jpg" alt="Описание работы">
 				<div class="works__content">
 					<h5>НАЗВАНИЕ РАБОТЫ</h5>
@@ -317,7 +321,7 @@
 				</div>
 			</div>
 
-			<div class="col-2 works__item">
+			<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 works__item">
 				<img src="img/works/work-6.jpg" alt="Описание работы">
 				<div class="works__content">
 					<h5>НАЗВАНИЕ РАБОТЫ</h5>
@@ -325,7 +329,7 @@
 				</div>
 			</div>
 
-			<div class="col-2 works__item">	
+			<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 works__item">	
 				<img src="img/works/work-7.jpg" alt="Описание работы">
 				<div class="works__content">
 					<h5>НАЗВАНИЕ РАБОТЫ</h5>
@@ -333,7 +337,7 @@
 				</div>
 			</div>
 
-			<div class="col-2 works__item">	
+			<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 works__item">	
 				<img src="img/works/work-8.jpg" alt="Описание работы">
 				<div class="works__content">
 					<h5>НАЗВАНИЕ РАБОТЫ</h5>
@@ -341,7 +345,7 @@
 				</div>
 			</div>
 
-			<div class="col-2 works__item">	
+			<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 works__item">	
 				<img src="img/works/work-9.jpg" alt="Описание работы">
 				<div class="works__content">
 					<h5>НАЗВАНИЕ РАБОТЫ</h5>
@@ -349,7 +353,7 @@
 				</div>
 			</div>
 
-			<div class="col-2 works__item">	
+			<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 works__item">	
 				<img src="img/works/work-10.jpg" alt="Описание работы">
 				<div class="works__content">
 					<h5>НАЗВАНИЕ РАБОТЫ</h5>
@@ -357,7 +361,7 @@
 				</div>
 			</div>
 
-			<div class="col-2 works__item">	
+			<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 works__item">	
 				<img src="img/works/work-11.jpg" alt="Описание работы">
 				<div class="works__content">
 					<h5>НАЗВАНИЕ РАБОТЫ</h5>
@@ -365,7 +369,7 @@
 				</div>
 			</div>
 
-			<div class="col-2 works__item">	
+			<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 works__item">	
 				<img src="img/works/work-12.jpg" alt="Описание работы">
 				<div class="works__content">
 					<h5>НАЗВАНИЕ РАБОТЫ</h5>
@@ -385,18 +389,18 @@
 
 	</section>
 
-	<section class="map">
+	<section id="map" class="map">
 		<div class="container">
 			
 			<div class="row">
 
-				<div class="col-5 map__descr">
+				<div class="col-md-5 col-12 map__descr">
 					<h4>РАСПОЛОЖЕНИЕ НАШЕГО ОФИСА</h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id dicta aperiam dolorum labore necessitatibus, dolores maiores, aliquam, iste officia reiciendis atque obcaecati pariatur mollitia iusto debitis iure praesentium soluta doloremque.</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id dicta aperiam dolorum labore necessitatibus, dolores maiores, aliquam, iste officia reiciendis atque obcaecati pariatur mollitia iusto debitis iure praesentium soluta doloremque.</p>
 				</div>
 
-				<div class="col-7 map__yandex">
+				<div class="col-md-7 col-12 map__yandex">
 					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8e31d694d75ee07a63319e56aa494c60de096d989a508e7dc82b9da44f5e94a0&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
 				</div>
 
@@ -405,11 +409,11 @@
 		</div>
 	</section>
 
-	<section class="contact">
+	<section id="contact" class="contact">
 		<div class="container">
 
 			<div class="row">
-				<div class="col-5 contact__title">
+				<div class="col-lg-5 col-md-8 col-12 contact__title">
 					<h4>СООБЩИТЕ НАМ ХОРОШИЕ НОВОСТИ</h4>
 				</div>
 				<div class="col-5 offset-2 contact__title">
@@ -419,7 +423,7 @@
 
 			<div class="row">
 
-				<div class="col-6 contact__form">
+				<div class="col-lg-6 col-md-8 col-12 contact__form">
 					<form action="#" id="massage">
 						<input class="contact__form-item" type="text" placeholder="Name" required="required">
 						<input class="contact__form-item" type="email" placeholder="Email" required="required">
@@ -455,7 +459,7 @@
 
 			<div class="row">
 
-				<div class="col-4 footer__block">
+				<div class="col-lg-4 col-md-6 col-12 footer__block">
 					<div class="footer__logo">
 						<img src="img/footer/footer-logo.png" alt="Логотип">
 						<p class="footer__grad">tajam</p>
@@ -463,17 +467,17 @@
 					<p>lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit</p>
 				</div>
 
-				<div class="col-4 footer__block">
+				<div class="col-lg-4 col-md-6 col-12 footer__block">
 					<h5>НАША СТУДИЯ</h5>
 					<div class="footer__address">
 						<p><img src="img/footer/footer-icon-map.png" alt="">Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat. 11480 - Indonesia</p>
 					</div>
 					<div class="footer__phone">
-						<p><img src="img/footer/footer-icon-phone.png" alt="">(+62) 21-2224 3333</p>
+						<a href="tel:(+62) 21-2224 3333"><p><img src="img/footer/footer-icon-phone.png" alt="">(+62) 21-2224 3333</p></a>
 					</div>
 				</div>
 
-				<div class="col-4 footer__block">
+				<div class="col-lg-4 col-md-6 col-12 footer__block">
 					<h5>ОСТАВАЙТЕСЬ НА СВЯЗИ</h5>
 					<div class="footer__form">
 						<form>
