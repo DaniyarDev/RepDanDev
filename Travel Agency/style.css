@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body {
+	font-family: 'Raleway', sans-serif;
+	background-image: url(img/header_img_4k.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.header {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__logo {
+	max-width: 64px;
+	max-height: 64px;
+	display: block;
+	background-image: url(img/logotype_travel.png);
+	background-repeat: no-repeat;
+}
+
+.header__list {
+	display: flex;
+	list-style-type: none;
+}
+
+.header__link {
+	color: #e1e1e1;
+}
